@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Syne:wght@800&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -79,17 +81,6 @@ html {
 Navbar
 ========================================== 
 */
-
-body
-{
-  margin: 0;
-  padding: 0;
-  
-  /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
 
 #menuToggle
 {
@@ -231,4 +222,92 @@ body
 #menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+/* Contenedores y imagenes */
+
+body {
+  background: conic-gradient(from 225deg at 50% 50%, #101B37 -33.75deg, #101B37 69.37deg, #01C8ED 131.25deg, #101B37 191.25deg, #E41476 255deg, #101B37 326.25deg, #101B37 429.38deg), conic-gradient(from 225deg at 50% 50%, #01C8ED 0deg, #101B37 90deg, #E41476 286.55deg, #01C8ED 360deg);  color: #cdcdcd;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#main-content {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.container-main {
+  padding: 20px 15px;
+  margin: 15px 15px;
+  width: 750px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-img {
+  display: flex;
+  max-width: 100%;
+  height: 350px;
+}
+
+.image-piano {
+  max-width: 100%;
+}
+
+.main-title {
+  margin-top: 60px;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  text-align: center;
+  width: 698px;
+  height: 163px;
+  left: 563px;
+  top: 487px;
+}
+
+.text {
+  font-size: 25px;
+}
+/* botton empecemos */
+.empecemos {
+  align-items: center;
+  background-image: linear-gradient(90deg,#E41476,#01C8ED);
+  border: 0;
+  border-radius: 20px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 15px 30px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.empecemos:active,
+.empecemos:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 24px;
+    min-width: 196px;
+  }
 }
