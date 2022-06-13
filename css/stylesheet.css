@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Overpass:wght@900&family=Syne:wght@800&display=swap');
 
 html {
   box-sizing: border-box;
@@ -224,7 +225,7 @@ Navbar
   transform: none;
 }
 
-/* Contenedores y imagenes */
+/* Contenedores y imagenes de piano-intro*/
 
 body {
   background: conic-gradient(from 225deg at 50% 50%, #101B37 -33.75deg, #101B37 69.37deg, #01C8ED 131.25deg, #101B37 191.25deg, #E41476 255deg, #101B37 326.25deg, #101B37 429.38deg), conic-gradient(from 225deg at 50% 50%, #01C8ED 0deg, #101B37 90deg, #E41476 286.55deg, #01C8ED 360deg);  color: #cdcdcd;
@@ -232,7 +233,7 @@ body {
   min-height: 100vh;
 }
 
-#main-content {
+.main-content {
   display: flex;
   justify-content: center;
   
@@ -311,3 +312,25 @@ body {
     min-width: 196px;
   }
 }
+
+/* Estilos de index */
+
+.music-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+  padding: 50px;
+}
+
+.music {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 200px;
+  text-transform: uppercase;
+  line-height: 80px;
+  letter-spacing: -0.1em;
+}
+
+/* Estilos de instrumentos.html */
+
