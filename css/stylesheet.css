@@ -333,9 +333,6 @@ body {
 /* Estilos de instrumentos.html */
 
 .instrumentos-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .instrumentos-texto-container {
@@ -346,11 +343,11 @@ body {
 }
 
 .instrumentos-imagenes-container {
-  width: 1500px;
   gap: 100px;
-  display:flex;
+  display:grid;
   justify-content: center;
   flex-wrap:wrap;
+  grid-template-columns: auto auto auto;
 }
 
 
@@ -358,14 +355,34 @@ body {
   width: 400px;
   height: 400px;
   border-radius: 20px;
+  z-index: 0;
 }
 
-.instrumentos-imagen:hover {
-  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+
+.overlay:hover{
+  top: 0;
+  left: 0;
+  margin-right: 0;
+  z-index: 1;
+  background: pink;
 }
 
 .icon {
   color: white;
-  font-size: 100px;
+  font-size: 84px;
+  position: absolute;
+  left: 40%;
+  top: 35%;
   text-align: center;
+  opacity: 0;
+}
+
+.icon:hover {
+  opacity: 1;
 }
