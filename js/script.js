@@ -1,18 +1,5 @@
 /* 
 ========================================== 
-Call Synth library 
-========================================== 
-*/
-
-Synth instanceof AudioSynth; // true
-
-var testInstance = new AudioSynth;
-testInstance instanceof AudioSynth; // true
-
-testInstance === Synth; // true
-
-/* 
-========================================== 
 Call Keypres library
 ========================================== 
 */
@@ -64,168 +51,176 @@ const B5 = document.getElementById("KEY_B,1");
 
 /* 
 ========================================== 
-Click Event Listeners for each div
+Click event listeners creating audio file
 ========================================== 
 */
 
-C3.addEventListener('click', () => soundNote('piano', 'C', 3, 2));
-C3S.addEventListener('click', () => soundNote('piano', 'C#', 3, 2));
-D3.addEventListener('click', () => soundNote('piano', 'D', 3, 2));
-D3S.addEventListener('click', () => soundNote('piano', 'D#', 3, 2));
-E3.addEventListener('click', () => soundNote('piano', 'E', 3, 2));
-F3.addEventListener('click', () => soundNote('piano', 'F', 3, 2));
-F3S.addEventListener('click', () => soundNote('piano', 'F#', 3, 2));
-G3.addEventListener('click', () => soundNote('piano', 'G', 3, 2));
-G3S.addEventListener('click', () => soundNote('piano', 'G#', 3, 2));
-A3.addEventListener('click', () => soundNote('piano', 'A', 3, 2));
-A3S.addEventListener('click', () => soundNote('piano', 'A#', 3, 2));
-B3.addEventListener('click', () => soundNote('piano', 'B', 3, 2));
-C4.addEventListener('click', () => soundNote('piano', 'C', 4, 2));
-C4S.addEventListener('click', () => soundNote('piano', 'C#', 4, 2));
-D4.addEventListener('click', () => soundNote('piano', 'D', 4, 2));
-D4S.addEventListener('click', () => soundNote('piano', 'D#', 4, 2));
-E4.addEventListener('click', () => soundNote('piano', 'E', 4, 2));
-F4.addEventListener('click', () => soundNote('piano', 'F', 4, 2));
-F4S.addEventListener('click', () => soundNote('piano', 'F#', 4, 2));
-G4.addEventListener('click', () => soundNote('piano', 'G', 4, 2));
-G4S.addEventListener('click', () => soundNote('piano', 'G#', 4, 2));
-A4.addEventListener('click', () => soundNote('piano', 'A', 4, 2));
-A4S.addEventListener('click', () => soundNote('piano', 'A#', 4, 2));
-B4.addEventListener('click', () => soundNote('piano', 'B', 4, 2));
-C5.addEventListener('click', () => soundNote('piano', 'C', 5, 2));
-C5S.addEventListener('click', () => soundNote('piano', 'C#', 5, 2));
-D5.addEventListener('click', () => soundNote('piano', 'D', 5, 2));
-D5S.addEventListener('click', () => soundNote('piano', 'D#', 5, 2));
-E5.addEventListener('click', () => soundNote('piano', 'E', 5, 2));
-F5.addEventListener('click', () => soundNote('piano', 'F', 5, 2));
-F5S.addEventListener('click', () => soundNote('piano', 'F#', 5, 2));
-G5.addEventListener('click', () => soundNote('piano', 'G', 5, 2));
-G5S.addEventListener('click', () => soundNote('piano', 'G#', 5, 2));
-A5.addEventListener('click', () => soundNote('piano', 'A', 5, 2));
-A5S.addEventListener('click', () => soundNote('piano', 'A#', 5, 2));
-B5.addEventListener('click', () => soundNote('piano', 'B', 5, 2));
+C3.addEventListener('click', () => soundNote('C', 3));
+C3S.addEventListener('click', () => soundNote('CS', 3));
+D3.addEventListener('click', () => soundNote('D', 3));
+D3S.addEventListener('click', () => soundNote('DS', 3));
+E3.addEventListener('click', () => soundNote('E', 3));
+F3.addEventListener('click', () => soundNote('F', 3));
+F3S.addEventListener('click', () => soundNote('FS', 3));
+G3.addEventListener('click', () => soundNote('G', 3));
+G3S.addEventListener('click', () => soundNote('GS', 3));
+A3.addEventListener('click', () => soundNote('A', 3));
+A3S.addEventListener('click', () => soundNote('AS', 3));
+B3.addEventListener('click', () => soundNote('B', 3));
+C4.addEventListener('click', () => soundNote('C', 4));
+C4S.addEventListener('click', () => soundNote('CS', 4));
+D4.addEventListener('click', () => soundNote('D', 4));
+D4S.addEventListener('click', () => soundNote('DS', 4));
+E4.addEventListener('click', () => soundNote('E', 4));
+F4.addEventListener('click', () => soundNote('F', 4));
+F4S.addEventListener('click', () => soundNote('FS', 4));
+G4.addEventListener('click', () => soundNote('G', 4));
+G4S.addEventListener('click', () => soundNote('GS', 4));
+A4.addEventListener('click', () => soundNote('A', 4));
+A4S.addEventListener('click', () => soundNote('AS', 4));
+B4.addEventListener('click', () => soundNote('B', 4));
+C5.addEventListener('click', () => soundNote('C', 5));
+C5S.addEventListener('click', () => soundNote('CS', 5));
+D5.addEventListener('click', () => soundNote('D', 5));
+D5S.addEventListener('click', () => soundNote('DS', 5));
+E5.addEventListener('click', () => soundNote('E', 5));
+F5.addEventListener('click', () => soundNote('F', 5));
+F5S.addEventListener('click', () => soundNote('FS', 5));
+G5.addEventListener('click', () => soundNote('G', 5));
+G5S.addEventListener('click', () => soundNote('GS', 5));
+A5.addEventListener('click', () => soundNote('A', 5));
+A5S.addEventListener('click', () => soundNote('AS', 5));
+B5.addEventListener('click', () => soundNote('B', 5));
 
 /* 
 ========================================== 
-Functions for keypress
+Function calling wav file using keys
 ========================================== 
 */
 
 listener.simple_combo("q", function() {
-    soundNote('piano', 'C', 3, 2);
+    soundNote('C', 3);
 });
 listener.simple_combo("2", function() {
-    soundNote('piano', 'C#', 3, 2);
+    soundNote('CS', 3);
 });
 listener.simple_combo("w", function() {
-    soundNote('piano', 'D', 3, 2);
+    soundNote('D', 3);
 });
 listener.simple_combo("3", function() {
-    soundNote('piano', 'D#', 3, 2);
+    soundNote('DS', 3);
 });
 listener.simple_combo("e", function() {
-    soundNote('piano', 'E', 3, 2);
+    soundNote('E', 3);
 });
 listener.simple_combo("r", function() {
-    soundNote('piano', 'F', 3, 2);
+    soundNote('F', 3);
 });
 listener.simple_combo("5", function() {
-    soundNote('piano', 'F#', 3, 2);
+    soundNote('FS', 3);
 });
 listener.simple_combo("t", function() {
-    soundNote('piano', 'G', 3, 2);
+    soundNote('G', 3);
 });
 listener.simple_combo("6", function() {
-    soundNote('piano', 'G#', 3, 2);
+    soundNote('GS', 3);
 });
 listener.simple_combo("y", function() {
-    soundNote('piano', 'A', 3, 2);
+    soundNote('A', 3);
 });
 listener.simple_combo("7", function() {
-    soundNote('piano', 'A#', 3, 2);
+    soundNote('AS', 3);
 });
 listener.simple_combo("u", function() {
-    soundNote('piano', 'B', 3, 2);
+    soundNote('B', 3);
 });
 listener.simple_combo("y", function() {
-    soundNote('piano', 'C', 4, 2);
+    soundNote('C', 4);
 });
 listener.simple_combo("9", function() {
-    soundNote('piano', 'C#', 4, 2);
+    soundNote('CS', 4);
 });
 listener.simple_combo("o", function() {
-    soundNote('piano', 'D', 4, 2);
+    soundNote('D', 4);
 });
 listener.simple_combo("0", function() {
-    soundNote('piano', 'D#', 4, 2);
+    soundNote('DS', 4);
 });
 listener.simple_combo("p", function() {
-    soundNote('piano', 'E', 4, 2);
+    soundNote('E', 4);
 });
 listener.simple_combo("[", function() {
-    soundNote('piano', 'F', 4, 2);
+    soundNote('F', 4);
 });
 listener.simple_combo("¡", function() {
-    soundNote('piano', 'F#', 4, 2);
+    soundNote('FS', 4);
 });
 listener.simple_combo("]", function() {
-    soundNote('piano', 'G', 4, 2);
+    soundNote('G', 4);
 });
 listener.simple_combo("a", function() {
-    soundNote('piano', 'G#', 4, 2);
+    soundNote('GS', 4);
 });
 listener.simple_combo("z", function() {
-    soundNote('piano', 'A', 4, 2);
+    soundNote('A', 4);
 });
 listener.simple_combo("s", function() {
-    soundNote('piano', 'A#', 4, 2);
+    soundNote('AS', 4);
 });
 listener.simple_combo("X", function() {
-    soundNote('piano', 'B', 4, 2);
+    soundNote('B', 4);
 });
 listener.simple_combo("c", function() {
-    soundNote('piano', 'C', 5, 2);
+    soundNote('C', 5);
 });
 listener.simple_combo("f", function() {
-    soundNote('piano', 'C#', 5, 2);
+    soundNote('CS', 5);
 });
 listener.simple_combo("v", function() {
-    soundNote('piano', 'D', 5, 2);
+    soundNote('D', 5);
 });
 listener.simple_combo("G", function() {
-    soundNote('piano', 'D#', 5, 2);
+    soundNote('DS', 5);
 });
 listener.simple_combo("b", function() {
-    soundNote('piano', 'E', 5, 2);
+    soundNote('E', 5);
 });
 listener.simple_combo("n", function() {
-    soundNote('piano', 'F', 5, 2);
+    soundNote('F', 5);
 });
 listener.simple_combo("j", function() {
-    soundNote('piano', 'F#', 5, 2);
+    soundNote('FS', 5);
 });
 listener.simple_combo("m", function() {
-    soundNote('piano', 'G', 5, 2);
+    soundNote('G', 5);
 });
 listener.simple_combo("k", function() {
-    soundNote('piano', 'G#', 5, 2);
+    soundNote('GS', 5);
 });
 listener.simple_combo(",", function() {
-    soundNote('piano', 'A', 5, 2);
+    soundNote('A', 5);
 });
 listener.simple_combo("l", function() {
-    soundNote('piano', 'A#', 5, 2);
+    soundNote('AS', 5);
 });
 listener.simple_combo(".", function() {
-    soundNote('piano', 'B', 5, 2);
+    soundNote('B', 5);
 });
 
 /* 
 ========================================== 
-Function calling synth sound
+Function calling sound notes
 ========================================== 
 */
 
-function soundNote(instrument, note, octave, duration) {
-  Synth.play(instrument, note, octave, duration);
+function soundNote(note, octave) {
+  let playlist = new Array('media/sounds/grandPiano/C3.flac', 'media/sounds/grandPiano/CS3.flac', 'media/sounds/grandPiano/C4.flac', 'media/sounds/grandPiano/CS4.flac', 'media/sounds/grandPiano/C5.flac','media/sounds/grandPiano/CS5.flac', 'media/sounds/grandPiano/D3.flac', 'media/sounds/grandPiano/DS3.flac', 'media/sounds/grandPiano/D4.flac', 'media/sounds/grandPiano/D5.flac', 'media/sounds/grandPiano/DS5.flac', 'media/sounds/grandPiano/E3.flac', 'media/sounds/grandPiano/E4.flac', 'media/sounds/grandPiano/E5.flac', 'media/sounds/grandPiano/F3.flac', 'media/sounds/grandPiano/FS3.flac', 'media/sounds/grandPiano/F4.flac', 'media/sounds/grandPiano/FS4.flac', 'media/sounds/grandPiano/F5.flac', 'media/sounds/grandPiano/FS5.flac', 'media/sounds/grandPiano/G3.flac', 'media/sounds/grandPiano/GS3.flac', 'media/sounds/grandPiano/G4.flac', 'media/sounds/grandPiano/GS4.flac', 'media/sounds/grandPiano/G5.flac', 'media/sounds/grandPiano/GS5.flac', 'media/sounds/grandPiano/A3.flac', 'media/sounds/grandPiano/AS3.flac', 'media/sounds/grandPiano/A4.flac', 'media/sounds/grandPiano/AS4.flac', 'media/sounds/grandPiano/A5.flac', 'media/sounds/grandPiano/AS5.flac', 'media/sounds/grandPiano/B3.flac', 'media/sounds/grandPiano/B4.flac', 'media/sounds/grandPiano/B5.flac');
+  let notaOctavo = note + "" + octave
+  for(let i = 0; i<playlist.length; i++){
+      if(playlist[i]=== 'media/sounds/grandPiano/' + notaOctavo + '.flac'){
+             myAudio = new Audio(playlist[i]);
+             myAudio.play();
+             break; 
+         }
+  }
 }
