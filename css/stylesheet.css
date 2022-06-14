@@ -11,6 +11,7 @@
 }
 
 
+
 body::-webkit-scrollbar {
   width: 0.25rem;
 }
@@ -96,6 +97,9 @@ main {
 .link-text {
   display: none;
   margin-left: 1rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  
 }
 
 .nav-link svg {
@@ -142,6 +146,7 @@ main {
   position: absolute;
   left: -999px;
   transition: var(--transition-speed);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar:hover .logo svg {
