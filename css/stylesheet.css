@@ -1,49 +1,48 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Overpass:wght@900&family=Syne:wght@800&display=swap');
 
 .keyboard-holder {
-    margin: 30px auto;
-    height: 200px;
-    position: relative;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
+  margin: 30px auto;
+  height: 200px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
 }
 
 .white {
-    background-color: #ffffff;
-    color: rgb(32,32,32);
-    z-index: 0;
-    text-shadow: 0px 1px 1px rgb(32 32 32 / 50%);
+  background-color: #ffffff;
+  color: rgb(32, 32, 32);
+  z-index: 0;
+  text-shadow: 0px 1px 1px rgb(32 32 32 / 50%);
 }
 
 .black {
-    background-color: rgb(32,32,32);
-    color: #ffffff;
-    z-index: 1;
-    text-shadow: 0px -1px 1px rgb(255 255 255 / 50%);
+  background-color: rgb(32, 32, 32);
+  color: #ffffff;
+  z-index: 1;
+  text-shadow: 0px -1px 1px rgb(255 255 255 / 50%);
 }
 
 .key {
-    position: absolute;
-    font-family: Helvetica;
-    font-weight: 100;
-    font-size: 12px;
-    border: 1px solid rgba(32,32,32,0.2);
-    border-radius: 0px 0px 5px 5px;
-    cursor: pointer;
-    box-shadow: 0px 5px 1px rgb(32 32 32 / 20%);
-    /*-webkit-transition: margin 0.05s ease, background-color 0.05s ease, box-shadow 0.05s ease;*/
+  position: absolute;
+  font-family: Helvetica;
+  font-weight: 100;
+  font-size: 12px;
+  border: 1px solid rgba(32, 32, 32, 0.2);
+  border-radius: 0px 0px 5px 5px;
+  cursor: pointer;
+  box-shadow: 0px 5px 1px rgb(32 32 32 / 20%);
+  /*-webkit-transition: margin 0.05s ease, background-color 0.05s ease, box-shadow 0.05s ease;*/
 }
 
 .key .label {
-    position: absolute;
-    bottom: 5px;
-    text-align: center;
-    left: 0px;
-    right: 0px;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  left: 0px;
+  right: 0px;
 }
 
 /* 
@@ -52,80 +51,75 @@ Navbar
 ========================================== 
 */
 
-#menuToggle
-{
+#menuToggle {
   display: block;
   position: relative;
   top: 50px;
   left: 50px;
-  
+
   z-index: 1;
-  
+
   -webkit-user-select: none;
   user-select: none;
 }
 
-#menuToggle a
-{
+#menuToggle a {
   text-decoration: none;
   color: #232323;
-  
+
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
+#menuToggle a:hover {
   color: tomato;
 }
 
 
-#menuToggle input
-{
+#menuToggle input {
   display: block;
   width: 40px;
   height: 32px;
   position: absolute;
   top: -7px;
   left: -5px;
-  
+
   cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
+
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+
   -webkit-touch-callout: none;
 }
 
 /*
  * Just a quick hamburger
  */
-#menuToggle span
-{
+#menuToggle span {
   display: block;
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+
   background: #cdcdcd;
   border-radius: 3px;
-  
+
   z-index: 1;
-  
+
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
@@ -133,8 +127,7 @@ Navbar
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked~span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
@@ -143,8 +136,7 @@ Navbar
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked~span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -152,8 +144,7 @@ Navbar
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked~span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -161,27 +152,25 @@ Navbar
  * Make this absolute positioned
  * at the top left of the screen
  */
-#menu
-{
+#menu {
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
+
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
-  
+
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
-#menu li
-{
+#menu li {
   padding: 10px 0;
   font-size: 22px;
 }
@@ -189,15 +178,15 @@ Navbar
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked~ul {
   transform: none;
 }
 
 /* Contenedores y imagenes de piano-intro*/
 
 body {
-  background: conic-gradient(from 225deg at 50% 50%, #101B37 -33.75deg, #101B37 69.37deg, #01C8ED 131.25deg, #101B37 191.25deg, #E41476 255deg, #101B37 326.25deg, #101B37 429.38deg), conic-gradient(from 225deg at 50% 50%, #01C8ED 0deg, #101B37 90deg, #E41476 286.55deg, #01C8ED 360deg);  color: #cdcdcd;
+  background: conic-gradient(from 225deg at 50% 50%, #101B37 -33.75deg, #101B37 69.37deg, #01C8ED 131.25deg, #101B37 191.25deg, #E41476 255deg, #101B37 326.25deg, #101B37 429.38deg), conic-gradient(from 225deg at 50% 50%, #01C8ED 0deg, #101B37 90deg, #E41476 286.55deg, #01C8ED 360deg);
+  color: #cdcdcd;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
@@ -205,14 +194,14 @@ body {
 .piano-intro-main {
   display: flex;
   justify-content: center;
-  
+
 }
 
 .piano-intro-container {
   padding: 20px 15px;
   margin: 15px 15px;
   width: 750px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
@@ -245,7 +234,7 @@ body {
 
 .botton-empecemos {
   align-items: center;
-  background-image: linear-gradient(90deg,#E41476,#01C8ED);
+  background-image: linear-gradient(90deg, #E41476, #01C8ED);
   border: 0;
   border-radius: 20px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
@@ -310,9 +299,9 @@ body {
 
 .instrumentos-imagenes-container {
   gap: 100px;
-  display:grid;
+  display: grid;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   grid-template-columns: auto auto auto;
 }
 
@@ -331,7 +320,7 @@ body {
   opacity: 1;
 }
 
-.overlay:hover{
+.overlay:hover {
   top: 0;
   left: 0;
   margin-right: 0;
@@ -351,4 +340,86 @@ body {
 
 .icon:hover {
   opacity: 1;
+}
+
+/* Vista Talleres*/
+.vista_talleres {
+  width: 100%;
+}
+
+.vista_talleres h1 {
+  font-family: 'Syne';
+  font-style: normal;
+  font-size: 3em;
+  padding-left: 11%;
+}
+
+.contenedor_talleres {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 7%;
+}
+
+.img_talleres {
+  position: relative;
+  width: 185px;
+  height: 50px;
+  top: 10px;
+  left: 55px;
+  text-align: center;
+}
+
+
+.img_talleres img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.img_talleres:hover {
+  transform: scale(1.1);
+  opacity: 65%;
+  z-index: 2;
+}
+
+.img_talleres p {
+  position: absolute;
+  color: #F5F5F5;
+  width: 185px;
+  height: 50px;
+  top: 10px;
+  left: 55px;
+  text-align: center;
+  opacity: 0;
+  z-index: 3;
+}
+
+.img_talleres p:hover {
+  width: 185px;
+  height: 50px;
+  top: 10px;
+  left: 55px;
+  text-align: center;
+  opacity: 1;
+
+}
+
+.img_talleres button {
+  position: absolute;
+  width: 165px;
+  height: 40px;
+  left: 60px;
+  top: 240px;
+  background: linear-gradient(93.14deg, #E41476 5.36%, #01C8ED 96.15%);
+  border-radius: 30px;
+  z-index: 6;
+}
+
+
+.img_talleres a {
+  font-family: 'Syne';
+  font-size: 14px;
+  color: white;
 }
