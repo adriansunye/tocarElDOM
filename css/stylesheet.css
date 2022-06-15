@@ -460,6 +460,20 @@ body {
   margin-top: 30px;
 }
 
+.botton-empecemos a{
+    color: #FFFFFF;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+   text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;    
+}
+
 .botton-empecemos:active,
 .botton-empecemos:hover {
   outline: 0;
@@ -546,4 +560,86 @@ body {
 
 .icon:hover {
   opacity: 1;
+}
+
+/* Vista Talleres*/
+.vista_talleres {
+  width: 100%;
+}
+
+.vista_talleres h1 {
+  font-family: 'Syne';
+  font-style: normal;
+  font-size: 3em;
+  padding-left: 11%;
+}
+
+.contenedor_talleres {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 7%;
+}
+
+.img_talleres {
+  position: relative;
+  width: 185px;
+  height: 50px;
+  top: 10px;
+  left: 55px;
+  text-align: center;
+}
+
+
+.img_talleres img {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.img_talleres:hover {
+  transform: scale(1.1);
+  opacity: 65%;
+  z-index: 2;
+}
+
+.img_talleres p {
+  position: absolute;
+  color: #F5F5F5;
+  width: 185px;
+  height: 50px;
+  top: 10px;
+  left: 55px;
+  text-align: center;
+  opacity: 0;
+  z-index: 3;
+}
+
+.img_talleres p:hover {
+  width: 185px;
+  height: 50px;
+  top: 10px;
+  left: 55px;
+  text-align: center;
+  opacity: 1;
+
+}
+
+.img_talleres button {
+  position: absolute;
+  width: 165px;
+  height: 40px;
+  left: 60px;
+  top: 240px;
+  background: linear-gradient(93.14deg, #E41476 5.36%, #01C8ED 96.15%);
+  border-radius: 30px;
+  z-index: 6;
+}
+
+
+.img_talleres a {
+  font-family: 'Syne';
+  font-size: 14px;
+  color: white;
 }
