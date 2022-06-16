@@ -6,6 +6,8 @@ Call Keypres library
 
 var listener = new window.keypress.Listener();
 
+var notaAnterior;
+
 /* 
 ========================================== 
 div elements 
@@ -218,9 +220,16 @@ function soundNote(note, octave) {
   let notaOctavo = note + "" + octave
   for(let i = 0; i<playlist.length; i++){
       if(playlist[i]=== 'media/sounds/grandPiano/' + notaOctavo + '.flac'){
+          if(notaAnterior === playlist[i]){
+              notaAnterior = "";
+              break;
+             }
+          else{
+             notaAnterior = playlist[i];
              myAudio = new Audio(playlist[i]);
              myAudio.play();
              break; 
+          }    
          }
   }
 }
