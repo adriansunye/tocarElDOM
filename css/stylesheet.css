@@ -493,9 +493,6 @@ body {
 
 /* Estilos de instrumentos.html */
 
-.instrumentos-main {
-}
-
 .instrumentos-texto-container {
   display: flex;
   gap: 50px;
@@ -546,4 +543,200 @@ body {
 
 .icon:hover {
   opacity: 1;
+}
+
+/* Estilos de sobrenosotros.html */
+
+.contenedor-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 10.5rem;
+  gap: 2rem;
+  width: 100%;
+  max-width: 50.5rem;
+  padding: 5.5rem;
+  margin:  auto;
+  box-sizing: border-box;
+}
+
+.sobre-nosotros {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  font-family: 'Syne';
+  color: #FFFFFF;
+  margin-top: 70px;
+
+}
+
+.logo-musicon {
+  width: 300px;
+  height: 200px;
+  margin-top: 5px;
+}
+
+.music-on {
+  font-family: 'Overpass';
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  text-transform: uppercase;
+  line-height: 80px;
+  letter-spacing: -0.1em;
+}
+
+.grupo {
+  width: 200px;
+  height: 200px;
+}
+
+.imagen-grupo {
+  max-width: 100%;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.textosobrenosotros {
+  margin-top: 50px;
+  font-style:normal;
+  font-weight:lighter;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  font-family: 'Open Sans';
+  color: #FFFFFF;
+}
+
+/* Estilos de login.html */
+
+.login {
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ingresar {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 60px;
+  font-family: 'Syne';
+  color: #FFFFFF;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 100px;
+}
+
+.inputForm {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: 'Open sans';
+  padding: 10px;
+  background-color: #E41476;
+  border-radius: 20px; 
+}
+
+.border {
+  max-width: 60%;
+  max-height: 120%;
+  border-style: solid;
+  border-color:#E41476;
+  border-radius: 20px;  
+  margin-top: 10px;
+}
+
+.formContent {
+  padding-left: 350px;
+}
+
+.withEmail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  font-family: 'Open sans';
+  color: #FFFFFF;
+}
+
+#login {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  font-family: 'Open sans';
+  color: #01C8ED;
+}
+
+#login a {
+  color: #01C8ED;
+}
+
+#ir a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  font-family: 'Open sans';
+  color: #ffffff;
+  background: linear-gradient(93.14deg, #E41476 5.36%, #01C8ED 96.15%);;
+  border-radius: 20px;
+  padding: 5px 30px 5px 30px;
+  margin-left: 210px;
+}
+
+.buttonRegistergoogle {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  font-family: 'Open sans';
+  padding-left: 185px;
+  padding-right: 165px;
+  background-color: #ffffff;
+  border-radius: 20px; 
+  margin-top: 30px;
+}
+
+.buttonRegisterfacebook {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  font-family: 'Open sans';
+  padding-left: 185px;
+  padding-right: 148px;
+  background-color: #273A9C;
+  border-radius: 20px;
+  margin-top: 10px;
+   
+}
+
+.buttonRegisterapple {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  font-family: 'Open sans';
+  padding-left: 185px;
+  padding-right: 173px;
+  background-color: #000000;
+  border-radius: 20px; 
+  margin-top: 10px;
 }
