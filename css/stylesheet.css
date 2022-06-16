@@ -688,6 +688,7 @@ body {
   font-family: 'Syne', sans-serif;
   font-size: 50px;
   padding: 53px;
+  color: white;
 }
 .videostu{
   display: flex;
@@ -706,4 +707,5 @@ body {
   text-align: center;
   font-size: 20px;
   font-family: 'Syne', sans-serif;
+  color: white;
 }  
