@@ -235,6 +235,7 @@ main {
 /* Large screens */
 @media only screen and (min-width: 600px) {
   .navbar {
+      overflow: hidden;
     top: 0;
     width: 5rem;
     height: 100vh;
