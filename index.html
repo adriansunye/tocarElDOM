@@ -6,79 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="shortcut icon" href="https://factoriaf5.org/wp-content/uploads/2021/09/Favicon-Factoria-F5-Web.png" type="image/x-icon">
     <title>Tocando el DOM</title>
-    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Place your stylesheet here-->
+
     <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
+
 <body>
+  <nav class="navbar">
+    <ul class="navbar-nav">
+      <li class="logo">
+        <a href="#" class="nav-link">
+          <span class="link-text logo-text">Menu</span>
+         
+           <svg width="90" height="90" viewBox="0 0 90 90" fill="none" role="img" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="90" height="90" fill="url(#pattern0)"/>
+            <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+            <use xlink:href="#image0_8_378" transform="scale(0.0111111)"/>
+            </pattern>
+            <image id="image0_8_378" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABmJLR0QA/wD/AP+gvaeTAAADeklEQVR4nO3cwWsUZxjH8d+jpUFy6aXFRr1IE+m93tRK1aIHj9JLgocebM4iBEqt4iWR/gH1UBBzUf+AniSBeNCT4CX0XJpNEFIP0hZM6reHHSjIzmTfd2bnnXfzfGAJTPZ93neenX333WdnRnLOOeecc84555wbHxbaAJiQdEfSrKRPGx9Rt21KWpb0g5m9DWkYk+i7km6EthszS2a2ENIgJtGbkg6HthszW2YW9G4+ENEJEW3Gzb+hDWISvRzRZtwE5+CDiE5uFn9nJU1FtM9ZT/0k/5h6IM4555xz+wjwOfAd8BDYKB6LwIepx5a1IrHzRWI3KbeYaozBtY4uAI5LOi/plKSzko4N2TS4RpEMMAHcBXoVR04d35b0exC4BWzVCV6xX8PoAUu0MQXRT/IozZT0u9hE8Ir9ChE8BXWxTDppZn8P6PeVpI/rBjezgftc9SIMkH+ZdFCSC7WT3CAvk7bEy6QjFl0mzWZ5FziHlkm2vIuZOnL2S+oBdF7NVd0G8D2Q7MCKmaNz8JekZ5KeFI8XZpb0R+VxSfSupJf6P7FroSe4uELFtHABOJR6fHvJftVR9k2va/bbqiMZT3RLghPNaMqkO8AqcL2pHQOmgDngPvB7Q+PMtkz6D/ATsGfBqCxA6PMb0kqZtKdmzov+VdI1M/tjyH6DPgyrXoQG9MzsSEiDFHM0kpYkXR42yR0U/CKmKJPOm9mCmb2rGSel0ZeK6X8YLtGvH4S6XaPfgUKfX1P0aQudWuwDX0u6Ium0pKOSJvdqk8sXlk4ATgBrMYdY6rFnA/gSeB37Xk49/mElfdsBJyQ9l/RRbIxcpo7UX8F/Vo0k5yRZooEL6p/OtS+kPKK/Sdh361Im+lTCvluXMtFBtYLctVEmnSgLVXPskvSmYoyj0Oky6SclcX5rYMfXS2IfbiB2leAyaczUMRf4/OmS7U8j+n7fWmCfTbka2qCNs0lPlmx/FNH3+x6XbP+igdhVgiuPbZRJLw7aaGZPVH5EDmPVzFZK/nepRtxhPBhx/Kgy6Q4wcIUBzAB/RsyR28BnJTGngN2ImMPI9+ou4Axhyd4GTqced5aAafq/gu9lhZIj2QUAzgH3gHXgTfFYL7Z9lXp8zjnnnHPd5/cmDeP3Jm2Z35u0JflfdJ8Jv+i+JX7R/Yj5vUmdc84555xzzjnnJP0HDxJdfhN7EWwAAAAASUVORK5CYII="/>
+            </defs>
+            </svg>
+        </a>
+      </li>
 
-    <nav role="navigation">
-      <div id="menuToggle">
-        <!--
-        A fake / hidden checkbox is used as click reciever,
-        so you can use the :checked selector on it.
-        -->
-        <input type="checkbox" />
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg class="piano" version="1.1" id="Layer_1"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
+             viewBox="0 0 120.59 122.88" style="enable-background:new 0 0 120.59 122.88" 
+             xml:space="preserve">
+           <g ><path fill="currentColor" d="M3.31,9.5h26.8V0H53.1v9.5h14.98V0h22.99v9.5h26.22h3.31v3.31v106.77v3.31h-3.31H3.31H0v-3.31V12.81V9.5H3.31L3.31,9.5z M91.06,16.11v53.9h-8.19v46.25h31.1V16.11H91.06L91.06,16.11z M76.26,70.01h-8.19v-53.9H53.1v53.9h-8.19v46.25h31.35V70.01 L76.26,70.01z M38.3,70.01h-8.19v-53.9H6.61v100.15H38.3V70.01L38.3,70.01z"/>
+           </g></svg>
+          <span class="link-text">Piano</span>
+        </a>
+      </li>
 
-        <!--
-        Some spans to act as a hamburger.
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg id="Layer_1" 
+          data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 119.3 122.88"><defs>
+            <style>.cls-1{fill-rule:evenodd;}</style>
+          </defs><title>gamification</title>
+          <path fill="currentColor" class="fa-primary" d="M47.53,78.63,44,82.15V75.1l3.52,3.53ZM43.38,46.85l-.06.25a18.43,18.43,0,0,1,3.82,4c24.13,0-9.51,0,25,0A19.18,19.18,0,0,1,76,47.05a2.16,2.16,0,0,1-.16-.51c-.1-.47-.24-1-.39-1.47s-.31-.9-.46-1.28l-.07-.14a18.17,18.17,0,0,0-1.54-2.87,17.31,17.31,0,0,0-2-2.44,16.61,16.61,0,0,0-2.43-2,18.17,18.17,0,0,0-2.87-1.54,15.73,15.73,0,0,0-3.12-1,17.49,17.49,0,0,0-6.66,0,16.62,16.62,0,0,0-3,.89l-.14.07a18.17,18.17,0,0,0-2.87,1.54,16.61,16.61,0,0,0-2.43,2,17.31,17.31,0,0,0-2,2.44,18.17,18.17,0,0,0-1.54,2.87,12.88,12.88,0,0,0-.58,1.57,16.21,16.21,0,0,0-.4,1.63ZM38.9,44.76c.08-.31.17-.62.27-.94.21-.7.46-1.38.74-2.06v0a22.46,22.46,0,0,1,2-3.64,20.69,20.69,0,0,1,2.58-3.16h0a20.69,20.69,0,0,1,3.16-2.58,22.46,22.46,0,0,1,3.64-2l.2-.08a20.29,20.29,0,0,1,3.88-1.18,22,22,0,0,1,8.56,0A20.65,20.65,0,0,1,68,30.37h0a22.46,22.46,0,0,1,3.64,2,20.69,20.69,0,0,1,3.16,2.58h0A20.69,20.69,0,0,1,77.4,38.1a23.31,23.31,0,0,1,2,3.64l.07.2c.25.6.46,1.16.62,1.68.11.34.2.69.3,1,8.36-2.9,18.1,2.23,24.53,9.24V46.46a2.31,2.31,0,0,0-.14-.82,2.76,2.76,0,0,0-.53-.76,2,2,0,0,0-1.57-.64H95.6a2.42,2.42,0,0,1-2.39-2c-.16-.65-.35-1.32-.56-2s-.46-1.41-.76-2.18l0-.12c-.27-.71-.55-1.38-.83-2s-.64-1.33-1-2a2.41,2.41,0,0,1,.4-2.84L96,25.45a2.09,2.09,0,0,0,.49-.67,2,2,0,0,0,.15-.81,2,2,0,0,0-.16-.83,2.39,2.39,0,0,0-.54-.78l-6.78-6.77a2.46,2.46,0,0,0-.77-.54,2.1,2.1,0,0,0-.84-.15,2.19,2.19,0,0,0-.85.15,2.3,2.3,0,0,0-.73.52l-5.06,5a2.4,2.4,0,0,1-3.07.28c-.58-.38-1.21-.74-1.86-1.09s-1.38-.72-2-1-1.4-.61-2.13-.89-1.39-.52-2.18-.78a2.43,2.43,0,0,1-1.67-2.3V7.08a2.5,2.5,0,0,0-.15-.9l-.05-.11a2.2,2.2,0,0,0-.44-.59,2.16,2.16,0,0,0-1.6-.64H56a2.16,2.16,0,0,0-.83.15,2.58,2.58,0,0,0-.76.52,2.21,2.21,0,0,0-.47.7l0,.07a2.2,2.2,0,0,0-.13.8v7.07a2.42,2.42,0,0,1-2,2.38c-.77.19-1.48.38-2.12.57s-1.45.48-2.14.75l-.13,0c-.61.24-1.27.52-2,.84s-1.37.66-2,1a2.41,2.41,0,0,1-2.84-.4L35,13.76a2.16,2.16,0,0,0-.68-.49,1.87,1.87,0,0,0-.8-.15,2,2,0,0,0-.83.16,2.39,2.39,0,0,0-.78.54c-2.29,2.18-4.54,4.55-6.78,6.79a2.39,2.39,0,0,0-.53.76,2.1,2.1,0,0,0-.15.84,2.14,2.14,0,0,0,.15.84,2.23,2.23,0,0,0,.52.74l5,5.06a2.41,2.41,0,0,1,.28,3.07c-.38.58-.74,1.21-1.09,1.86s-.72,1.39-1,2-.61,1.4-.9,2.13-.51,1.39-.77,2.18a2.43,2.43,0,0,1-2.3,1.67H16.63a2.5,2.5,0,0,0-.9.15l-.12,0a2.41,2.41,0,0,0-.58.43h0a2.24,2.24,0,0,0-.49.7,2.46,2.46,0,0,0-.15.9v9.69h0C20.63,47,30.55,42,38.9,44.76ZM11.07,58.08a6.82,6.82,0,0,1-1.52-4.34V44.05a7.14,7.14,0,0,1,.51-2.71h0a7,7,0,0,1,3.61-3.74l.24-.12A7.14,7.14,0,0,1,16.63,37h6l.28-.75c.31-.79.65-1.59,1-2.39s.76-1.61,1.15-2.34l.32-.57-3.67-3.68a7,7,0,0,1-1.58-2.3h0a7,7,0,0,1,0-5.44,7.18,7.18,0,0,1,1.56-2.29l6.8-6.82A7.44,7.44,0,0,1,30.8,8.83a7,7,0,0,1,2.72-.55,6.71,6.71,0,0,1,4.95,2.13l4.31,4.24.64-.3c.68-.32,1.43-.63,2.25-.95l.13-.05c.81-.32,1.63-.61,2.47-.86l.68-.2V7.08a7,7,0,0,1,.48-2.59l0-.15A7.08,7.08,0,0,1,51,2.08l0-.05A7.12,7.12,0,0,1,53.35.53,6.72,6.72,0,0,1,56,0H65.7a6.81,6.81,0,0,1,5,2.06,7,7,0,0,1,1.44,2.07l.11.24a7.14,7.14,0,0,1,.51,2.71v6l.75.29c.79.3,1.59.64,2.4,1s1.6.76,2.33,1.15l.57.32,3.69-3.67a7.12,7.12,0,0,1,2.3-1.58,7,7,0,0,1,5.44,0,7,7,0,0,1,2.29,1.56L99.37,19a7.27,7.27,0,0,1,1.55,2.28,7,7,0,0,1,.55,2.72,6.71,6.71,0,0,1-2.13,5l-4.25,4.31.32.67c.35.77.67,1.53,1,2.29l0,.11c.3.78.58,1.61.85,2.48l.19.62h5.22a6.83,6.83,0,0,1,5,2.08l0,.05a7.34,7.34,0,0,1,1.51,2.26h0a6.93,6.93,0,0,1,.52,2.66v9.7a7.22,7.22,0,0,1-.51,2.71h0c-.07.16-.15.33-.23.49l.23.37c7.31,12.72,10.94,31.53,9.89,45a33.06,33.06,0,0,1-2.75,11.68c-1.69,3.48-4.12,5.76-7.38,6.36-4.16.77-9.35-1.42-15.6-7.78-.8-.82-1.64-1.64-2.49-2.49a72.16,72.16,0,0,1-8.58-9.52H37a70.65,70.65,0,0,1-8.59,9.55c-.84.83-1.68,1.65-2.47,2.46-6.25,6.36-11.44,8.55-15.6,7.78-3.26-.6-5.71-2.88-7.39-6.36A33.29,33.29,0,0,1,.18,104.69c-1.09-14,2.91-33.92,10.89-46.61Zm27,8.35v6.46h6.46c7.33,0,7.33,11.07,0,11.07H38.05v6.46c0,7.33-11.07,7.33-11.07,0V84H20.51c-7.32,0-7.32-11.07,0-11.07H27V66.43c0-7.33,11.07-7.33,11.07,0Zm50.56-5.64a5.11,5.11,0,1,1-7.22,0,5.09,5.09,0,0,1,7.22,0Zm0,22.27a5.11,5.11,0,1,1-7.22,0,5.09,5.09,0,0,1,7.22,0Zm12.25-11.62a5.11,5.11,0,1,1-7.22,0,5.09,5.09,0,0,1,7.22,0Zm-24.51,0a5.11,5.11,0,1,1-7.22,0,5.09,5.09,0,0,1,7.22,0ZM32.69,63.79l3.53,3.52h-7l3.52-3.52ZM17.85,78.63l3.53,3.52V75.1l-3.53,3.53ZM32.69,93.46l3.53-3.52h-7l3.52,3.52Z"/>
+          </svg>
+        
+          <span class="link-text">Juegos</span>
+        </a>
+      </li>
+        <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" 
+          shape-rendering="geometricPrecision" 
+          text-rendering="geometricPrecision" 
+          image-rendering="optimizeQuality" 
+          fill-rule="evenodd" 
+          clip-rule="evenodd" 
+          viewBox="0 0 495 511.87">
+          <path fill="currentColor" class="fa-primary" d="M32.87 28.24h123.11l7.6-26.95h30.66l-7.05 26.95h45.74V2.61h30.3v25.63h45.23L297.68 0h31.85l10.98 28.24h121.62c9 0 17.2 3.69 23.18 9.65l.06.06c5.94 5.97 9.63 14.17 9.63 23.16v254.4c0 9.01-3.7 17.21-9.65 23.19l-.07.06c-5.97 5.94-14.17 9.63-23.15 9.63h-43.32l44.9 163.48H432.6l-20.15-73.06H263.23v69.04h-30.3v-69.04H81.14l-20.21 72.67H29.76l45.21-163.09h-42.1c-9 0-17.21-3.7-23.18-9.65l-.07-.07C3.68 332.7 0 324.5 0 315.51V61.11c0-9 3.69-17.21 9.65-23.18l.07-.07c5.97-5.94 14.16-9.62 23.15-9.62zm371.22 380.27-16.58-60.12H263.23v60.12h140.86zm-171.16 0v-60.12H106.28l-16.72 60.12h143.37zM32.87 39.25h429.26c12.02 0 21.85 9.84 21.85 21.86v254.4c0 12.03-9.83 21.86-21.85 21.86H32.87c-12.02 0-21.85-9.83-21.85-21.86V61.11c0-12.02 9.83-21.86 21.85-21.86z"/></svg>
+          <span class="link-text">Workshop</span>
+        </a>
+      </li>
 
-        They are acting like a real hamburger,
-        not that McDonalds stuff.
-        -->
-        <span></span>
-        <span></span>
-        <span></span>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 101.9">
+            <defs><style>.cls-1{fill-rule:evenodd;}</style></defs>
+            <title>computer-monitor-video-play</title>
+            <path fill="currentColor" class="fa-primary" d="M3.34,0h116.2a3.35,3.35,0,0,1,3.34,3.34v77a3.35,3.35,0,0,1-3.34,3.34H3.34A3.35,3.35,0,0,1,0,80.32v-77A3.35,3.35,0,0,1,3.34,0Zm58.1,15.82A21.93,21.93,0,1,1,39.51,37.75,21.93,21.93,0,0,1,61.44,15.82Zm7.8,23.29c1.12-.72,1.12-1.53,0-2.17L57.71,30.31c-.91-.57-1.86-.23-1.84,1l0,13.4c.08,1.28.81,1.64,1.9,1l11.43-6.6Zm-7.8-18.83A17.47,17.47,0,1,1,44,37.75,17.47,17.47,0,0,1,61.44,20.28Zm-15.15,68h30.3c.08,5.24,2.24,9.94,8.09,13.63H38.2c4.68-3.39,8.11-7.51,8.09-13.63Zm-39-83.5H115.56a3,3,0,0,1,3,3V68a3,3,0,0,1-3,3H7.33a3,3,0,0,1-2.95-3V7.72a3,3,0,0,1,3-2.95Z"/></svg>
+          <span class="link-text">Videos</span>
+        </a>
+      </li>
 
-        <!--
-        Too bad the menu has to be inside of the button
-        but hey, it's pure CSS magic.
-        -->
-        <ul id="menu">
-          <a href="#"><li>Home</li></a>
-          <a href="#"><li>About</li></a>
-          <a href="#"><li>Info</li></a>
-          <a href="#"><li>Contact</li></a>
-          <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
-        </ul>
-      </div>
-    </nav>
+      <li class="nav-item">
+        <a href="#" class="nav-link">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 109.95 122.88"><defs>
+            <style>.cls-1{fill-rule:evenodd;}</style></defs>
+            <title>about-me</title><path fill="currentColor" class="fa-primary" d="M26,20.12C40.76,1.89,57.77-8,70.54,8.19,85.92,9,92.09,33.44,79.82,43.73l-.07.61a6.12,6.12,0,0,1,1.42-.27,4.4,4.4,0,0,1,2.51.47,3.56,3.56,0,0,1,1.75,2.12,6.42,6.42,0,0,1-.08,3.65c-.57,1.78-1.28,3.77-1.95,5.52a3.9,3.9,0,0,1-1.19,1.92,3.56,3.56,0,0,1-2.6.63l-.53-.06c-.13,6.07-3.09,8.86-7,12.51l-.18.17c3.61,9,10.59,11.29,17.53,12.45,23.63,4,20.34,16.57,20.34,28.68H78.73a25.8,25.8,0,0,1-39.19,3.2l-.22-.24a25.08,25.08,0,0,1-2.48-3H0C0,96.82-1.44,87,24.09,84.24c7.82-.84,15.63-2.93,18.87-13.7-3.54-3.07-6.44-5.86-7-12.2h-.33a4.57,4.57,0,0,1-2.24-.59,6.08,6.08,0,0,1-2.46-3,13.37,13.37,0,0,1-1-4.49v0c0-.48,0-1.39,0-2.26s.06-1.5.12-1.92a1.07,1.07,0,0,1,.1-.36c.79-2.22,2-2.94,3.62-2.89l-1.06-.7c-.58-7.18,1.11-19.64-6.69-22ZM56.24,86a3.87,3.87,0,0,1,.3-1.53,3.77,3.77,0,0,1,.87-1.29,4.28,4.28,0,0,1,1.28-.87,4,4,0,0,1,3,0,4.32,4.32,0,0,1,1.26.87,4,4,0,0,1,.85,1.29A3.83,3.83,0,0,1,64.07,86a4,4,0,0,1-.28,1.52,4.1,4.1,0,0,1-.86,1.29,4.05,4.05,0,0,1-1.26.88,3.71,3.71,0,0,1-1.49.3,3.83,3.83,0,0,1-2.79-1.17,3.94,3.94,0,0,1-.86-1.29A4,4,0,0,1,56.24,86Zm2.23,20.59-.14.55c-.07.46,0,1,.56,1a1.28,1.28,0,0,0,.71-.31,6.67,6.67,0,0,0,1-1,18.57,18.57,0,0,0,1.25-1.61c.44-.62.89-1.32,1.36-2.11a.18.18,0,0,1,.24-.06l1.61,1.19a.18.18,0,0,1,0,.24,29,29,0,0,1-2.23,3.35,15,15,0,0,1-2.31,2.38h0c-2.13,1.73-6.07,2.9-8.39.83-1.89-1.7-1.15-4.46-.51-6.55l2.09-6c.35-1.24,1.2-3.53-1-3.53H50.55a.19.19,0,0,1-.18-.18L51,92.58a.17.17,0,0,1,.17-.13l11.53-.36a.18.18,0,0,1,.19.17v.06l-4.39,14.29Zm-.69-31.29A21.78,21.78,0,1,1,36,97.09,21.77,21.77,0,0,1,57.78,75.32Z"/></svg>
+          <span class="link-text">Workshop</span>
+        </a>
+      </li>
+
+      <li class="nav-item" id="themeButton">
+        <a href="#" class="nav-link">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 117.85">
+            <defs><style>.cls-1{fill-rule:evenodd;}</style></defs><title>user-login</title>
+            <path fill="currentColor" class="fa-primary" class="cls-1" d="M108,96.63l12.88,13.06v6.14h-6.09v-4.62h-5.06v-5h-4.83l-1.4-4.55A14.08,14.08,0,0,1,95.63,104a13.32,13.32,0,1,1,13.8-13.31,12.87,12.87,0,0,1-1.47,6ZM95,62.12a27.85,27.85,0,0,1,26.22,37.27l-4.55-4.61a22.2,22.2,0,0,0-39-18.63l-.1.13,0,0,0,0-.24.31h0l-.12.17-.14.19-.13.18-.13.19-.1.14,0,.05-.13.19-.12.19v0l-.11.17-.12.2,0,.08-.07.11-.12.2-.09.15,0,0-.12.2-.11.2v0l-.09.18-.11.2,0,.1-.06.11-.1.2-.08.17,0,0-.1.21-.09.2,0,0L74.7,81l-.09.22,0,.1,0,.11-.09.21-.07.18v0l-.09.21-.08.22v0l-.07.18-.07.22,0,.11L74,83l-.11.34,0,.07v0l-.07.22-.06.23,0,0,0,.17-.06.23,0,.12,0,.1-.1.4V85h0l-.1.45v.06l0,.17,0,.23,0,.14,0,.1-.06.38v.09l0,.23,0,.24v.06l0,.18,0,.23v.24l0,.42v0h0l0,.24,0,.24v.13l0,.36v1.3h0v.67l0,.42v.06h0l0,.54v0l0,.28,0,.25v0l.07.46v.1l0,.27,0,.24v0l.1.48v.07l.06.27,0,.22v.06l.07.27,0,.21v.06l.08.26.07.27.08.26v.05l.07.22.08.26.07.19,0,.07.09.26.07.18,0,.08.09.25.1.26.11.25.07.17,0,.08.11.26.11.24.12.25.07.15,0,.1.12.24h0c.2.4.42.79.64,1.18l.14.24.14.23.14.23.15.22.15.23.07.11.08.11h0c.41.59.84,1.16,1.3,1.71l.18.21.17.2h0c.23.27.48.52.72.78l.19.19.06.07.13.12A22.14,22.14,0,0,0,95,112.18a22.78,22.78,0,0,0,4.7-.5,7.64,7.64,0,0,0,2.73,1.63,7.44,7.44,0,0,0,1.69,3,27.82,27.82,0,0,1-28.82-6.63l-.33-.35a27.29,27.29,0,0,1-2.89-3.53H0C0,74,28.69,85.5,40.31,69.53c1.34-2,1-1.82-.52-3.42a18.41,18.41,0,0,1-1.61-1.93c-3.1-4.25-5.88-9.06-8.68-13.53-2-3-3.09-5.65-3.09-7.78s1.21-4.93,3.62-5.53a120.24,120.24,0,0,1-.21-14,19.64,19.64,0,0,1,.64-3.51,20.3,20.3,0,0,1,9-11.51A23.11,23.11,0,0,1,44.41,6c3.09-1.17,1.6-5.86,5-6,8-.21,21.09,6.61,26.2,12.15a20.15,20.15,0,0,1,5.22,13.1l-.32,12.62a3.94,3.94,0,0,1,2.88,2.87c.42,1.71,0,4-1.49,7.35h0c0,.11-.11.11-.11.22C78.51,53.73,75.1,60,71.32,65c-1.9,2.53-3.46,2.08-1.84,4.51a19.81,19.81,0,0,0,3.37,3.57,26.52,26.52,0,0,1,2.47-2.82l.35-.32A27.72,27.72,0,0,1,95,62.12ZM93.64,86.39a2.46,2.46,0,1,1-2.46,2.46,2.47,2.47,0,0,1,2.46-2.46Z"/></svg>
+          <span class="link-text">Login</span>
+        </a>
+        <a href="#" class="redes">
+          <img src="./png icon/faceicon.png" alt="" width="20px" height="20px" style="filter: invert(1)  ;" >
+          <img src="./png icon/instaicon.png" alt="" width="20px" height="20px" style="filter: invert(1)  ;">
+          <img src="./png icon/twittericon.png" alt="" width="20px" height="20px" style="filter: invert(1)   ;">
+        </a>
+      </li>  
+    </ul>
+  </nav>
+
     <main id="main-content" >
-        <div id="piano">
-  
-          <img class="logo" src="" alt="">
-
-          <div class="keys">
-            <div class="key"></div>
-            <div class="key black--key"></div>
-            <div class="key black--key"></div>
-            <div class="key"></div>
-            <div class="key black--key"></div>
-            <div class="key black--key"></div>
-            <div class="key black--key"></div>
-
-            <div class="key"></div>
-            <div class="key black--key"></div>
-            <div class="key black--key"></div>
-            <div class="key"></div>
-            <div class="key black--key"></div>
-            <div class="key black--key"></div>
-            <div class="key black--key"></div>
-
-            <div class="key"></div>
-            <div class="key black--key"></div>
-            <div class="key black--key"></div>
-            <div class="key"></div>
-            <div class="key black--key"></div>
-            <div class="key black--key"></div>
-            <div class="key black--key"></div>
-
-          </div>
-
-        </div>
+        
+    <div class="index-container">
+      <h1 class="index-titulo">
+        MUSIC <br> ON <i class="bi bi-music-note-beamed"></i>
+      </h1>
+    </div>
     </main><!-- /.container -->
 
 
@@ -88,6 +126,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+      
 </body>
 </html>
