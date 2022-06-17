@@ -385,8 +385,7 @@ main {
 /* Contenedores y imagenes de piano-intro*/
 
 body {
-  background: conic-gradient(from 225deg at 50% 50%, #101B37 -33.75deg, #101B37 69.37deg, #01C8ED 131.25deg, #101B37 191.25deg, #E41476 255deg, #101B37 326.25deg, #101B37 429.38deg), conic-gradient(from 225deg at 50% 50%, #01C8ED 0deg, #101B37 90deg, #E41476 286.55deg, #01C8ED 360deg);
-  color: #cdcdcd;
+  background: conic-gradient(from 225deg at 50% 50%, #101B37 -33.75deg, #101B37 69.37deg, #01C8ED 131.25deg, #101B37 191.25deg, #E41476 255deg, #101B37 326.25deg, #101B37 429.38deg), conic-gradient(from 225deg at 50% 50%, #01C8ED 0deg, #101B37 90deg, #E41476 286.55deg, #01C8ED 360deg);  color: #cdcdcd;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
@@ -504,7 +503,10 @@ body {
 
 /* Estilos de instrumentos.html */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/features/Dalia
 .instrumentos-texto-container {
   display: flex;
   gap: 50px;
@@ -532,9 +534,8 @@ body {
 
 .instrumentos-imagenes-container {
   gap: 100px;
-  display: grid;
+  display:grid;
   justify-content: center;
-  flex-wrap: wrap;
   grid-template-columns: auto auto auto;
 }
 
@@ -555,6 +556,7 @@ body {
   top: 0;
   left: 0;
   margin-right: 0;
+
   filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
 
@@ -578,6 +580,7 @@ body {
   text-align: center;
   opacity: 1;
 }
+
 
 /* ============Vista Talleres ============*/
 .vista_talleres {
@@ -614,6 +617,7 @@ body {
 .img_talleres:hover {
   transform: scale(1.1);
   opacity: 65%;
+  filter: sepia(80%) hue-rotate(190deg) saturate(300%);
 }
 
 .img_talleres p {
@@ -715,6 +719,7 @@ body {
   font-family: 'Syne', sans-serif;
   color: white;
 }  
+
 /*===========Vista Juegos================*/
 .vista_juegos {
   margin-left: 5%;
@@ -784,4 +789,265 @@ body {
   color: #01C8ED;
 }
 
+/*pag videos*/
+@media(min-width:375px) and (max-width: 667px){
+  .videostu{
+    display: flex;
+    flex-direction: column !important;
+    
+  }
+  .titulo{
+    padding: 10px !important ;
+  }
+  .imagenEstilo{
+    width: 66px !important;
+    height: 54px !important;
+  }
+  .textoEstilo{
+    font-size: 16px !important;
+  }
+  .imagenEstilo{
+    width: 250px !important;
+    height: 250px !important;
+  }
+  .boxdos{
+    margin: 0 !important;
+  }
+  .imagenes{
+    padding: 50px !important;
+  }
 
+}
+
+.videopag{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  min-height: 80vh;
+  margin: auto;
+}
+.titulo{
+  display: flex;
+  align-self: flex-start;
+  font-family: 'Syne', sans-serif;
+  font-size: 50px;
+  padding: 53px;
+  color: white;
+}
+.videostu{
+  display: flex;
+  width: 100%;
+  gap: 90px;
+}
+.video{
+  border-radius: 74px;
+  padding: 30px;
+  width: 100%;
+}
+.tutorial{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Syne', sans-serif;
+  color: white;
+}  
+
+/* Estilos de sobrenosotros.html */
+
+.contenedor-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 10.5rem;
+  gap: 2rem;
+  width: 100%;
+  max-width: 50.5rem;
+  padding: 5.5rem;
+  margin:  auto;
+  box-sizing: border-box;
+}
+
+.sobre-nosotros {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  font-family: 'Syne';
+  color: #FFFFFF;
+  margin-top: 70px;
+
+}
+
+.logo-musicon {
+  width: 300px;
+  height: 200px;
+  margin-top: 5px;
+}
+
+.music-on {
+  font-family: 'Overpass';
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  text-transform: uppercase;
+  line-height: 80px;
+  letter-spacing: -0.1em;
+}
+
+.grupo {
+  width: 200px;
+  height: 200px;
+}
+
+.imagen-grupo {
+  max-width: 100%;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.textosobrenosotros {
+  margin-top: 50px;
+  font-style:normal;
+  font-weight:lighter;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  font-family: 'Open Sans';
+  color: #FFFFFF;
+}
+
+/* Estilos de login.html */
+
+.login {
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ingresar {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 60px;
+  font-family: 'Syne';
+  color: #FFFFFF;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-left: 100px;
+}
+
+.inputForm {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: 'Open sans';
+  padding: 10px;
+  background-color: #E41476;
+  border-radius: 20px; 
+}
+
+.border {
+  max-width: 60%;
+  max-height: 120%;
+  border-style: solid;
+  border-color:#E41476;
+  border-radius: 20px;  
+  margin-top: 10px;
+}
+
+.formContent {
+  padding-left: 350px;
+}
+
+.withEmail {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  font-family: 'Open sans';
+  color: #FFFFFF;
+}
+
+#login {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  font-family: 'Open sans';
+  color: #01C8ED;
+}
+
+#login a {
+  color: #01C8ED;
+}
+
+#ir a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  font-family: 'Open sans';
+  color: #ffffff;
+  background: linear-gradient(93.14deg, #E41476 5.36%, #01C8ED 96.15%);;
+  border-radius: 20px;
+  padding: 5px 30px 5px 30px;
+  margin-left: 210px;
+}
+
+.buttonRegistergoogle {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  font-family: 'Open sans';
+  padding-left: 185px;
+  padding-right: 165px;
+  background-color: #ffffff;
+  border-radius: 20px; 
+  margin-top: 30px;
+}
+
+.buttonRegisterfacebook {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  font-family: 'Open sans';
+  padding-left: 185px;
+  padding-right: 148px;
+  background-color: #273A9C;
+  border-radius: 20px;
+  margin-top: 10px;
+   
+}
+
+.buttonRegisterapple {
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+  font-family: 'Open sans';
+  padding-left: 185px;
+  padding-right: 173px;
+  background-color: #000000;
+  border-radius: 20px; 
+  margin-top: 10px;
+}
