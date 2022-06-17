@@ -1057,3 +1057,19 @@ body {
   border-radius: 20px; 
   margin-top: 10px;
 }
+
+.primeros_pasos summary{
+  font-family: 'Syne';
+font-style: normal;
+font-weight: 700;
+margin-right: 7%;
+text-align: right;
+}
+.primeros_pasos h3{
+  margin-left: 7%;
+}
+.primeros_pasos p{
+  margin-left: 8%;
+  margin-right: 5%;
+
+}
