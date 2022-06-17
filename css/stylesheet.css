@@ -547,11 +547,6 @@ body {
 }
 
 
-
-.overlay {
-  position: relative;
-}
-
 .overlay:hover {
   top: 0;
   left: 0;
@@ -925,6 +920,7 @@ body {
 
 .login {
   margin-left: 300px;
+     margin-right: 300px;
   display: flex;
   flex-direction: column;
 }
