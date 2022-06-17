@@ -6,8 +6,6 @@ Call Keypres library
 
 var listener = new window.keypress.Listener();
 
-var notaAnterior;
-
 /* 
 ========================================== 
 div elements 
@@ -220,47 +218,42 @@ function soundNote(note, octave) {
   let notaOctavo = note + "" + octave
   for(let i = 0; i<playlist.length; i++){
       if(playlist[i]=== 'media/sounds/grandPiano/' + notaOctavo + '.flac'){
-          if(notaAnterior === playlist[i]){
-              notaAnterior = "";
-              break;
-             }
-          else{
-             notaAnterior = playlist[i];
              myAudio = new Audio(playlist[i]);
              myAudio.play();
-             break; 
-          }    
+             break;     
          }
   }
 }
 
 
+/* 
 // funcion hover para imagenes
 
-// let overlay = document.querySelector(".overlay");
-// let icon = document.querySelector(".icon");
+let overlay = document.querySelector(".overlay");
+let icon = document.querySelector(".icon");
 
-// overlay.addEventListener("mouseover", function (event) {
-//   //highlight the mouseover target
-//       if (icon.className == "icon") {
-//         icon.classList.remove("icon");
-//         icon.classList.add("icon-fade");
-//       }
-//     else {
-//       return
-//     }
-//   console.log(event)
-// }, false);
+overlay.addEventListener("mouseover", function (event) {
+//highlight the mouseover target
+       if (icon.className == "icon") {
+         icon.classList.remove("icon");
+        icon.classList.add("icon-fade");
+       }
+     else {
+       return
+    }
+   console.log(event)
+ }, false);
 
-// overlay.addEventListener("mouseout", function () {
-//   // highlight the mouseout target
-//   if (icon.className == "icon"){
-//     icon.classList.remove('icon-fade');
-//     icon.classList.add('icon')
-//   }
-//   else {
-//     return
-//   }
-// console.log("exit")
+ overlay.addEventListener("mouseout", function () {
+   // highlight the mouseout target
+   if (icon.className == "icon"){
+     icon.classList.remove('icon-fade');
+     icon.classList.add('icon')
+   }
+   else {
+     return
+   }
+ console.log("exit")
 
-//   }, false);
+   }, false); 
+*/
