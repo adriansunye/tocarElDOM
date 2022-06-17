@@ -380,8 +380,7 @@ main {
 /* Contenedores y imagenes de piano-intro*/
 
 body {
-  background: conic-gradient(from 225deg at 50% 50%, #101B37 -33.75deg, #101B37 69.37deg, #01C8ED 131.25deg, #101B37 191.25deg, #E41476 255deg, #101B37 326.25deg, #101B37 429.38deg), conic-gradient(from 225deg at 50% 50%, #01C8ED 0deg, #101B37 90deg, #E41476 286.55deg, #01C8ED 360deg);
-  color: #cdcdcd;
+  background: conic-gradient(from 225deg at 50% 50%, #101B37 -33.75deg, #101B37 69.37deg, #01C8ED 131.25deg, #101B37 191.25deg, #E41476 255deg, #101B37 326.25deg, #101B37 429.38deg), conic-gradient(from 225deg at 50% 50%, #01C8ED 0deg, #101B37 90deg, #E41476 286.55deg, #01C8ED 360deg);  color: #cdcdcd;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
@@ -508,9 +507,8 @@ body {
 
 .instrumentos-imagenes-container {
   gap: 100px;
-  display: grid;
+  display:grid;
   justify-content: center;
-  flex-wrap: wrap;
   grid-template-columns: auto auto auto;
 }
 
@@ -519,37 +517,38 @@ body {
   width: 400px;
   height: 400px;
   border-radius: 20px;
-  z-index: 0;
 }
 
 
 .overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 1;
+  position: relative;
 }
 
 .overlay:hover {
-  top: 0;
-  left: 0;
-  margin-right: 0;
-  z-index: 1;
-  background: pink;
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
 
 .icon {
   color: white;
   font-size: 84px;
   position: absolute;
-  left: 40%;
-  top: 35%;
+  right: 40%;
+  bottom: 35%;
   text-align: center;
   opacity: 0;
 }
 
-.icon:hover {
+.icon-fade {
+  
+  color: white;
+  font-size: 84px;
+  position: absolute;
+  right: 40%;
+  bottom: 35%;
+  text-align: center;
   opacity: 1;
 }
+
 
 /* ============Vista Talleres ============*/
 .vista_talleres {
@@ -581,13 +580,11 @@ body {
   width: 20em;
   height: 20em;
   border-radius: 20px;
-  z-index: 1;
 }
 
 .img_talleres:hover {
   transform: scale(1.1);
-  opacity: 65%;
-  z-index: 2;
+  filter: sepia(80%) hue-rotate(190deg) saturate(300%);
 }
 
 .img_talleres p {
