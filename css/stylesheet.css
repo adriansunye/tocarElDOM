@@ -499,6 +499,7 @@ body {
 
 /* Estilos de instrumentos.html */
 
+
 .instrumentos-texto-container {
   display: flex;
   gap: 50px;
@@ -519,35 +520,42 @@ body {
   width: 400px;
   height: 400px;
   border-radius: 20px;
-  z-index: 0;
 }
 
 
 .overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 1;
+  position: relative;
 }
 
 .overlay:hover {
+<<<<<<< HEAD
   top: 0;
   left: 0;
   margin-right: 0;
   z-index: 1;
   background: pink;
+  filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+
 }
 
 .icon {
   color: white;
   font-size: 84px;
   position: absolute;
-  left: 40%;
-  top: 35%;
+  right: 40%;
+  bottom: 35%;
   text-align: center;
   opacity: 0;
 }
 
-.icon:hover {
+.icon-fade {
+  
+  color: white;
+  font-size: 84px;
+  position: absolute;
+  right: 40%;
+  bottom: 35%;
+  text-align: center;
   opacity: 1;
 }
 
@@ -624,7 +632,7 @@ body {
   color: white;
 }
 
-<<<<<<< HEAD
+
 /*pag videos*/
 @media(min-width:375px) and (max-width: 667px){
   .videostu{
