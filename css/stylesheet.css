@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Syne:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Overpass:wght@900&family=Syne:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Overpass:wght@900&family=Syne:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@300&family=Overpass:wght@900&family=Syne:wght@700;800&display=swap');
+
+
 
 * {
   margin: 0;
@@ -504,7 +508,25 @@ body {
   display: flex;
   gap: 50px;
   align-items: center;
-  width: 1400px;
+  justify-content: center;
+  margin-right: 350px;
+}
+
+.intrumentos-title {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 120px;
+}
+
+.aprende-title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.05em;
 }
 
 .instrumentos-imagenes-container {
@@ -516,11 +538,12 @@ body {
 }
 
 
-.instrumentos-imagen {
+.instrumentosimg {
   width: 400px;
   height: 400px;
   border-radius: 20px;
 }
+
 
 
 .overlay {
@@ -767,4 +790,5 @@ body {
   letter-spacing: 0.05em;
   color: #01C8ED;
 }
+
 
