@@ -624,6 +624,7 @@ body {
   top: 2em;
   left: 4.5em;
   opacity: 0;
+  margin-left:10%;
 }
 
 .img_talleres p:hover {
@@ -638,6 +639,7 @@ body {
   bottom: 5%;
   background: linear-gradient(93.14deg, #E41476 5.36%, #01C8ED 96.15%);
   border-radius: 30px;
+    margin-left:10%;
 }
 
 .img_talleres a {
