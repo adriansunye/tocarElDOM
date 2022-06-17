@@ -1,27 +1,17 @@
-let overlay = document.querySelector(".overlay");
-let icon = document.querySelector(".icon");
+ const body = document.querySelector('body'),
+ overlay = body.querySelector(".overlay"),
+ icon = body.querySelector(".icon"),
+ iconfade = body.querySelector(".icon-fade"),
+ instrumentos = body.querySelector(".instrumentosimg");
 
-overlay.addEventListener("mouseover", function (event) {
-  //highlight the mouseover target
-      if (icon.className == "icon") {
-        icon.classList.remove("icon");
-        icon.classList.add("icon-fade");
-      }
-    else {
-      return
-    }
-  console.log(event)
-}, false);
+ overlay.addEventListener("mouseover", () => {
+    icon.classList.toggle("icon-fade");
+ });
 
-overlay.addEventListener("mouseout", function () {
-  // highlight the mouseout target
-  if (icon.className == "icon"){
-    icon.classList.remove('icon-fade');
-    icon.classList.add('icon')
-  }
-  else {
-    return
-  }
-console.log("exit")
+ overlay.addEventListener("mouseout", () => {
+  icon.classList.toggle("icon-fade");
+});
 
-  }, false);
+
+
+  // document.querySelectorAll(".icon").forEach(icon => icon.classList.toggle("icon-fade")))
